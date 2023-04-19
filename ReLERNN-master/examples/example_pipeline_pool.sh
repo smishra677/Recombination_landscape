@@ -6,7 +6,7 @@ SEED="42"
 MU="1e-8"
 URTR="1"
 DIR="./example_output_pool/"
-POOL="./example.pool"
+POOL="./example1.pool"
 GENOME="./genome.bed"
 MASK="./accessibility_mask.bed"
 
