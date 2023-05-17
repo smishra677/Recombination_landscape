@@ -314,8 +314,8 @@ class SequenceBatchGenerator(tf.keras.utils.Sequence):
 
                 haps=np.where(haps == -1.0, self.posPadVal,haps)
                 pos=np.where(pos == -1.0, self.posPadVal,pos)
-                z = np.stack((haps,pos), axis=-1)
-
+                #z = np.stack((haps,pos), axis=-1)
+                z = np.stack((pos), axis=-1)
                 return z, targets
         else:
             if(self.maxLen != None):
